@@ -18,9 +18,10 @@ namespace ContactInfo
     /// <summary>
     /// Interaction logic for EditContact.xaml
     /// </summary>
-    public partial class EditContact : UserControl
+    public partial class EditContact : Window
     {
         IContactManager contactManager;
+
 
         public EditContact()
         {
@@ -38,6 +39,12 @@ namespace ContactInfo
 
             Contact contact = new Contact(firstname, lastname, mobilenumber, description);
             contactManager.CreateContact(contact);
+            this.Close();
+        }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

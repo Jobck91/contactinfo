@@ -13,14 +13,14 @@ namespace ContactInfo
     {
         public ContactManagerRemote()
         {
-            TcpClient client = new TcpClient("192.168.0.112", 1337);
+            //TcpClient client = new TcpClient("192.168.0.112", 1337);
         }
 
         public bool CreateContact(Contact contact)
         {
 
             //Convert object to proper format 
-            String contactStr = "{ 'title' : '" + contact.
+            //String contactStr = "{ 'title' : '" + contact.
 
             return true;
         }

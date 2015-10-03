@@ -21,6 +21,7 @@ namespace ContactInfo
     public partial class MainWindow : Window
     {
         IContactManager contactManager;
+        
 
         public MainWindow()
         {
@@ -30,5 +31,10 @@ namespace ContactInfo
             
         }
 
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            EditContact ec = new EditContact();
+            ec.Show();
+        }
     }
 }

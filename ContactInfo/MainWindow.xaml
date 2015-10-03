@@ -8,6 +8,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <local:EditContact />
+        <Button x:Name="button" Content="Add Contact" HorizontalAlignment="Left" Margin="229,239,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
     </Grid>
 </Window>
