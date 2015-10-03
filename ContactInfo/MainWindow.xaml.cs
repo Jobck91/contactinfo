@@ -20,9 +20,13 @@ namespace ContactInfo
     /// </summary>
     public partial class MainWindow : Window
     {
+        IContactManager contactManager;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            contactManager = Factory.CreateContactManager();
         }
     }
 }

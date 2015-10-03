@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace ContactInfo
 {
-    public class Contact
+    public class Factory
     {
-        string firstName;
-        string lastName;
-        int mobileNumber;
-        string notis;
-        int id;
+        public static IContactManager CreateContactManager()
+        {
+            return new ContactManagerTemporary();
+        }
     }
 }
