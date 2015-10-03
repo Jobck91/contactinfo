@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ContactInfo
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ShowContact.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ShowContact : Window
     {
-        IContactManager contactManager;
-
-        public MainWindow()
+        public ShowContact()
         {
             InitializeComponent();
-
-            contactManager = Factory.CreateContactManager();
-            
         }
-
     }
 }

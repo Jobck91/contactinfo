@@ -10,8 +10,32 @@ namespace ContactInfo
     {
         string firstName;
         string lastName;
-        int mobileNumber;
-        string notis;
+        string mobileNumber;
+        string description;
         int id;
+
+
+        public string FirstName
+        {
+            get { return firstName; }
+        }
+        public string LastName
+        {
+            get { return lastName; }
+        }
+        public string MobileNumber
+        {
+            get { return mobileNumber; }
+        }
+        public string Description
+        {
+            get { return description; }
+        }
+        public int Id
+        {
+            get { return id; }
+        }
+
+
     }
 }

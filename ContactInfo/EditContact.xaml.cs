@@ -16,19 +16,27 @@ using System.Windows.Shapes;
 namespace ContactInfo
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for EditContact.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EditContact : UserControl
     {
         IContactManager contactManager;
 
-        public MainWindow()
+        public EditContact()
         {
             InitializeComponent();
-
             contactManager = Factory.CreateContactManager();
-            
+
         }
 
+        private void AddContact_Click(object sender, RoutedEventArgs e)
+        {
+            String firstname = FirstNameInput.Text;
+            String lastname = LastNameInput.Text;
+            String mobilenumber = MobileNumberInput.Text;
+            String description = DescriptionInput.Text;
+            Contact contact;
+            contactManager.CreateContact()
+        }
     }
 }
