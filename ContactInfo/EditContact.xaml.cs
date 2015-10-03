@@ -35,8 +35,9 @@ namespace ContactInfo
             String lastname = LastNameInput.Text;
             String mobilenumber = MobileNumberInput.Text;
             String description = DescriptionInput.Text;
-            Contact contact;
-            contactManager.CreateContact()
+
+            Contact contact = new Contact(firstname, lastname, mobilenumber, description);
+            contactManager.CreateContact(contact);
         }
     }
 }
