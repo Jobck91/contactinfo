@@ -10,7 +10,7 @@ namespace ContactInfo
     {
         public static IContactManager CreateContactManager()
         {
-            return new ContactManagerTemporary();
+            return new ContactManager();
         }
     }
 }
