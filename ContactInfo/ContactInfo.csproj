@@ -65,6 +65,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Contact.cs" />
+    <Compile Include="ContactManagerRemote.cs" />
     <Compile Include="ContactManagerTemporary.cs" />
     <Compile Include="Factory.cs" />
     <Compile Include="IContactManager.cs" />
